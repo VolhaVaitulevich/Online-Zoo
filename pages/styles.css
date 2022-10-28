@@ -82,22 +82,55 @@ body {
 
 .logo {
   margin: 15px;
-  border: 1px solid #fff;
   border-radius: 3px;
   width: 82px;
   position: absolute;
-  top: 0;
   left: 14%;
-  text-align: center;
   box-sizing: border-box;
 }
 .logo__image {
-  position: relative;
+  position: absolute;
+  top: 50%;
+  left: 15%;
 }
 .logo__text {
-  padding: inherit;
+  border: 1px solid #fff;
   color: white;
   font-family: Roboto;
+  text-align: center;
   font-size: 1.2rem;
   line-height: 120%;
+}
+
+.header__designed-by {
+  color: white;
+  text-align: right;
+  margin-right: 20%;
+  font-family: Roboto;
+  font-size: 1rem;
+  position: relative;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.header__designed-by a {
+  color: white;
+  text-decoration: none;
+}
+.header__designed-by a:hover {
+  color: #f9804b;
+}
+
+.header__watch-online-button {
+  color: white;
+  background-color: #f9804b;
+  position: relative;
+  font-family: Roboto;
+  font-size: 1rem;
+  border: 0;
+  border-radius: 25px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 45px;
+  padding-right: 45px;
 }
