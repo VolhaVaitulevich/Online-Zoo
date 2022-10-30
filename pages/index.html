@@ -14,12 +14,17 @@
   <body>
     <header class="header">
       <div class="navigation-bar">
-        <span class="logo">
-          <div class="logo__text">
-            <img class="logo__image" src="logo__image.png" alt="Logo" />PetStory
-            online
-          </div>
-        </span>
+        <div class="logo">
+          <a href="#about">
+            <div class="logo__text">
+              <img
+                class="logo__image"
+                src="logo__image.png"
+                alt="Logo"
+              />PetStory online
+            </div>
+          </a>
+        </div>
         <ul class="navigation-tabs">
           <li class="navigation-tabs__item"><a href="#about">About</a></li>
           <li class="navigation-tabs__item"><a href="#map">Map</a></li>
@@ -28,21 +33,26 @@
           <li class="navigation-tabs__item">
             <a href="#contactUs">Contact Us</a>
           </li>
+          <li class="navigation-tabs__item navigation-tabs__item-designed-by">
+            <a href="#about">Designed by ©</a>
+          </li>
         </ul>
-        <div class="header__designed-by"><a href="#about">Designed by ©</div>
       </div>
       <img
         class="header__image"
         src="header__image.png"
         alt="Giant panda image"
       />
-      <div class="header__watch-online-circle">
-        <p class="header__watch-online-text">
-          Watch your <span style="color: #fe2e">favorite</span> animal online
-        </p>
-        <button class="header__watch-online-button">WATCH ONLINE</button>
+      <div class="header__watch-online">
+        <div class="header__watch-online-circle">
+          <p class="header__watch-online-text">
+            WATCH YOUR <span style="color: #fe2e">FAVOURITE</span> ANIMAL ONLINE
+          </p>
+          <button class="header__watch-online-button" type="button">
+            WATCH ONLINE
+          </button>
+        </div>
       </div>
-      
     </header>
   </body>
   <footer></footer>

@@ -25,9 +25,9 @@ body {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  display: inline;
+  display: inline-block;
   overflow: hidden;
-  font-size: 1rem;
+  font-size: 16px;
   font-family: Roboto;
 }
 
@@ -42,6 +42,7 @@ body {
   text-decoration: none;
   color: white;
 }
+
 .navigation-tabs__item a:hover {
   color: #f9804b;
 }
@@ -55,8 +56,8 @@ body {
 }
 
 .header__watch-online-circle {
-  height: 465px;
-  width: 465px;
+  height: 400px;
+  width: 400px;
   background-color: #f9804b;
   border-radius: 50%;
   display: inline-block;
@@ -64,20 +65,32 @@ body {
   top: 92px;
   left: 50%;
 }
+
 .header__watch-online-text {
   width: inherit;
-  margin: 0;
-  padding-top: 20%;
   padding-left: 25%;
-  box-sizing: content-box;
-  position: relative;
+  margin-bottom: 0;
   text-align: center;
   color: white;
   font-family: Roboto;
-  font-size: 6rem;
+  font-size: 86px;
   font-weight: bold;
-  text-transform: uppercase;
   line-height: 80%;
+}
+
+.header__watch-online-button {
+  color: white;
+  background-color: #f9804b;
+  margin-left: 40%;
+  font-family: Roboto;
+  font-size: 16px;
+  border: 0;
+  border-radius: 25px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 45px;
+  padding-right: 45px;
+  cursor: pointer;
 }
 
 .logo {
@@ -88,6 +101,11 @@ body {
   left: 14%;
   box-sizing: border-box;
 }
+
+.logo a {
+  text-decoration: none;
+}
+
 .logo__image {
   position: absolute;
   top: 50%;
@@ -98,39 +116,6 @@ body {
   color: white;
   font-family: Roboto;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 19px;
   line-height: 120%;
-}
-
-.header__designed-by {
-  color: white;
-  text-align: right;
-  margin-right: 20%;
-  font-family: Roboto;
-  font-size: 1rem;
-  position: relative;
-  top: 50%;
-  transform: translate(0, -50%);
-}
-
-.header__designed-by a {
-  color: white;
-  text-decoration: none;
-}
-.header__designed-by a:hover {
-  color: #f9804b;
-}
-
-.header__watch-online-button {
-  color: white;
-  background-color: #f9804b;
-  position: relative;
-  font-family: Roboto;
-  font-size: 1rem;
-  border: 0;
-  border-radius: 25px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-left: 45px;
-  padding-right: 45px;
 }
