@@ -2,59 +2,95 @@ body {
   margin: 0;
 }
 
-.header {
-  display: block;
-  height: 1vh;
-  width: 100%;
-  align-items: center;
+* {
+  box-sizing: border-box;
+}
+
+.intro {
+  height: 100vh;
 }
 
 .navigation-bar {
   background-color: black;
   height: 80px;
   width: 100%;
-  padding-left: 23%;
-  box-sizing: border-box;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10%;
 }
 
-.navigation-tabs {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: inline-block;
-  overflow: hidden;
+.logo {
+  margin: 15px;
+  border-radius: 3px;
+  width: 82px;
+  position: relative;
+}
+
+.logo a {
+  text-decoration: none;
+}
+
+.logo__text {
+  border: 1px solid #fff;
+  color: white;
   font-family: Roboto;
-  font-size: 16px;
+  text-align: center;
+  font-size: 19px;
+  line-height: 120%;
+  background-image: url("logo_image.svg");
+  background-repeat: no-repeat;
+  background-position: bottom 20% left 8%;
 }
 
-.navigation-tabs__item {
+.navigation-tabs__link {
   float: left;
   text-align: center;
   padding: 29px;
   color: white;
+  font-family: Roboto;
+  font-size: 16px;
 }
 
-.navigation-tabs__item a {
+a.navigation-tabs__link {
   text-decoration: none;
   color: white;
 }
 
-.navigation-tabs__item a:hover {
+a.navigation-tabs__link:hover {
   color: #f9804b;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
-.header__image {
-  width: 100%;
-  height: auto;
-  position: fixed;
-  top: 0;
-  left: 0;
+.header__designed-by a {
+  float: left;
+  text-align: center;
+  padding: 29px;
+  color: white;
+  font-family: Roboto;
+  font-size: 16px;
 }
 
+.header__designed-by a {
+  text-decoration: none;
+  color: white;
+}
+
+.header__designed-by a:hover {
+  color: #f9804b;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.bear_change_name {
+  height: 100vh;
+  background-image: url("header__image.png");
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: cover;
+  /* display: flex; 
+  justify-content: center;
+  align-content: center; */
+}
 .header__watch-online-circle {
   height: 400px;
   width: 400px;
@@ -67,8 +103,6 @@ body {
 }
 
 .header__watch-online-text {
-  width: inherit;
-  padding-left: 25%;
   margin-bottom: 0;
   text-align: center;
   color: white;
@@ -92,30 +126,4 @@ body {
   padding-left: 45px;
   padding-right: 45px;
   cursor: pointer;
-}
-
-.logo {
-  margin: 15px;
-  border-radius: 3px;
-  width: 82px;
-  position: absolute;
-  left: 14%;
-}
-
-.logo a {
-  text-decoration: none;
-}
-
-.logo__image {
-  position: absolute;
-  top: 50%;
-  left: 15%;
-}
-.logo__text {
-  border: 1px solid #fff;
-  color: white;
-  font-family: Roboto;
-  text-align: center;
-  font-size: 19px;
-  line-height: 120%;
 }
