@@ -6,11 +6,6 @@ body {
   box-sizing: border-box;
 }
 
-.content {
-  position: relative;
-  min-height: 100vh;
-}
-
 .navigation-bar {
   background-color: black;
   height: 80px;
@@ -91,8 +86,8 @@ a.navigation-tabs__link:hover {
 }
 
 .header__watch-online-circle {
-  height: 400px;
-  width: 400px;
+  height: 70vh; /* 400px; */
+  width: 70vh; /* 400px; */
   background-color: #f9804b;
   border-radius: 50%;
   position: relative;
@@ -104,7 +99,7 @@ a.navigation-tabs__link:hover {
   width: 30vw;
   color: white;
   font-family: Roboto;
-  font-size: 5rem;
+  font-size: 13vh;
   font-weight: bold;
   line-height: 80%;
   position: relative;
@@ -122,21 +117,64 @@ a.navigation-tabs__link:hover {
   color: white;
   background-color: #f9804b;
   font-family: Roboto;
-  font-size: 16px;
+  font-size: 2vh;
   border: 0;
-  border-radius: 25px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-left: 45px;
-  padding-right: 45px;
+  border-radius: 3vh;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  padding-left: 5vh;
+  padding-right: 5vh;
   cursor: pointer;
   position: relative;
   top: 10%;
   left: 40%;
 }
 
+.page-content {
+  display: flex;
+  min-height: 100vh;
+  height: 100%;
+  margin-left: 120px;
+  margin-top: 0;
+  margin-right: 0;
+}
+
+.page-content__how-it-works {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+}
+
+.page-content__how-it-works-img {
+  width: 40%;
+}
+
+.page-content__flower1 {
+  width: 15%;
+}
+
+h1 {
+  font-family: Roboto;
+  font-weight: 100;
+  font-size: 36px;
+  margin-top: 0;
+}
+
+h2 {
+  font-family: Roboto;
+  font-weight: 100;
+  font-size: 24px;
+}
+
+h3 {
+  font-family: Roboto;
+  font-weight: 100;
+  font-size: 16px;
+}
+
 footer {
-  position: absolute;
   bottom: 0;
   width: 100%;
   height: 440px;
@@ -301,6 +339,7 @@ a.footer__navigation-tabs__link {
   text-decoration: none;
   color: white;
 }
+
 a.footer__navigation-tabs__link:hover {
   color: #f9804b;
 }
