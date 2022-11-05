@@ -6,13 +6,9 @@ body {
   box-sizing: border-box;
 }
 
-.intro {
+.content {
   position: relative;
   min-height: 100vh;
-}
-
-.content {
-  height: 300vh;
 }
 
 .navigation-bar {
@@ -86,7 +82,7 @@ a.navigation-tabs__link:hover {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.bear_change_name {
+.header__content-background {
   height: 100vh; /* calc(100vh-80px); */
   background-image: url("header__image.png");
   background-repeat: no-repeat;
@@ -145,14 +141,15 @@ footer {
   width: 100%;
   height: 440px;
   background-color: black;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.footer__navigation-bar {
+.footer__top {
   background-color: black;
   height: 80px;
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-content: space-between;
   align-items: center;
@@ -160,7 +157,6 @@ footer {
 }
 
 .footer__logo {
-  flex-basis: 100%;
   margin: 15px;
 }
 
@@ -182,7 +178,41 @@ footer {
   background-position: bottom 20% left 8%;
 }
 
+.footer__subscription p {
+  color: white;
+  margin-bottom: 5px;
+  font-family: Roboto;
+  font-size: 24px;
+}
+
+.footer__subscription-email {
+  border-color: #f9804b;
+  background-color: black;
+  border-radius: 2px;
+  border-width: 1px;
+  height: 40px;
+  width: 230px;
+  color: white;
+}
+
+.footer__subscription-button {
+  width: 130px;
+  height: 40px;
+  background-color: white;
+  border-color: #4b9200;
+  border-radius: 2px;
+  border-width: 1px;
+  color: #4b9200;
+  font-family: Roboto;
+  font-size: 16px;
+  cursor: pointer;
+}
+
 .footer__donate-button {
+  padding: 0 10%;
+}
+
+.footer__donate-button button {
   color: white;
   background-color: #f9804b;
   font-family: Roboto;
@@ -196,4 +226,89 @@ footer {
   cursor: pointer;
   text-transform: uppercase;
   margin-left: 15px;
+  margin-top: 10px;
+}
+
+.footer__contacts-link {
+  color: white;
+  text-decoration: none;
+  margin-left: 40px;
+  line-height: 200%;
+}
+
+.footer__bottom {
+  padding: 0 10%;
+  margin-left: 15px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__contacts {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+
+.footer__contacts-circle {
+  height: 30px;
+  width: 30px;
+  background-color: grey;
+  border-radius: 50%;
+}
+
+.footer__contacts-circle-facebook {
+  background-image: url("logo_facebook.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.footer__contacts-circle-twitter {
+  background-image: url("logo_twitter.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.footer__contacts-circle-instagram {
+  background-image: url("logo_instagram.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.footer__contacts-circle-youtube {
+  background-image: url("logo_youtube.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.footer__navigation-tabs {
+  align-self: flex-end;
+}
+
+.footer__navigation-tabs__link {
+  float: left;
+  text-align: center;
+  padding: 29px;
+  color: white;
+  font-family: Roboto;
+  font-size: 16px;
+}
+
+a.footer__navigation-tabs__link {
+  text-decoration: none;
+  color: white;
+}
+a.footer__navigation-tabs__link:hover {
+  color: #f9804b;
+}
+
+.footer__designed-by {
+  color: grey;
+  font-family: Roboto;
+  font-size: 16px;
+  align-self: flex-end;
+  padding: 10px;
 }
