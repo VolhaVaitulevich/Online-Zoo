@@ -4,6 +4,7 @@ body {
 
 * {
   box-sizing: border-box;
+  font-family: Roboto;
 }
 
 .navigation-bar {
@@ -30,21 +31,18 @@ body {
   border: 1px solid #fff;
   border-radius: 3px;
   color: white;
-  font-family: Roboto;
   text-align: center;
   font-size: 19px;
   line-height: 120%;
-  background-image: url("logo_image.svg");
+  background-image: url("../images/logo_image.svg");
   background-repeat: no-repeat;
   background-position: bottom 20% left 8%;
 }
 
 .navigation-tabs__link {
-  float: left;
   text-align: center;
   padding: 29px;
   color: white;
-  font-family: Roboto;
   font-size: 16px;
 }
 
@@ -59,11 +57,9 @@ a.navigation-tabs__link:hover {
 }
 
 .header__designed-by a {
-  float: left;
   text-align: center;
   padding: 29px;
   color: white;
-  font-family: Roboto;
   font-size: 16px;
 }
 
@@ -79,7 +75,7 @@ a.navigation-tabs__link:hover {
 
 .header__content-background {
   height: 100vh; /* calc(100vh-80px); */
-  background-image: url("header__image.png");
+  background-image: url("../images/header__image.png");
   background-repeat: no-repeat;
   background-position: top left;
   background-size: cover;
@@ -98,7 +94,6 @@ a.navigation-tabs__link:hover {
 .header__watch-online-text {
   width: 30vw;
   color: white;
-  font-family: Roboto;
   font-size: 13vh;
   font-weight: bold;
   line-height: 80%;
@@ -116,7 +111,6 @@ a.navigation-tabs__link:hover {
 .header__watch-online-button {
   color: white;
   background-color: #f9804b;
-  font-family: Roboto;
   font-size: 2vh;
   border: 0;
   border-radius: 3vh;
@@ -156,20 +150,17 @@ a.navigation-tabs__link:hover {
 }
 
 h1 {
-  font-family: Roboto;
   font-weight: 100;
   font-size: 36px;
   margin-top: 0;
 }
 
 h2 {
-  font-family: Roboto;
   font-weight: 100;
   font-size: 24px;
 }
 
 h3 {
-  font-family: Roboto;
   font-weight: 100;
   font-size: 16px;
 }
@@ -206,12 +197,11 @@ footer {
   border: 1px solid #fff;
   border-radius: 3px;
   color: white;
-  font-family: Roboto;
   text-align: center;
   font-size: 19px;
   line-height: 120%;
   width: 82px;
-  background-image: url("logo_image.svg");
+  background-image: url("../images/logo_image.svg");
   background-repeat: no-repeat;
   background-position: bottom 20% left 8%;
 }
@@ -219,7 +209,6 @@ footer {
 .footer__subscription p {
   color: white;
   margin-bottom: 5px;
-  font-family: Roboto;
   font-size: 24px;
 }
 
@@ -241,7 +230,6 @@ footer {
   border-radius: 2px;
   border-width: 1px;
   color: #4b9200;
-  font-family: Roboto;
   font-size: 16px;
   cursor: pointer;
 }
@@ -253,14 +241,10 @@ footer {
 .footer__donate-button button {
   color: white;
   background-color: #f9804b;
-  font-family: Roboto;
   font-size: 16px;
   border: 0;
   border-radius: 5px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-left: 45px;
-  padding-right: 45px;
+  padding: 15px 45px;
   cursor: pointer;
   text-transform: uppercase;
   margin-left: 15px;
@@ -299,39 +283,38 @@ footer {
 }
 
 .footer__contacts-circle-facebook {
-  background-image: url("logo_facebook.svg");
+  background-image: url("../images/logo_facebook.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .footer__contacts-circle-twitter {
-  background-image: url("logo_twitter.svg");
+  background-image: url("../images/logo_twitter.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .footer__contacts-circle-instagram {
-  background-image: url("logo_instagram.svg");
+  background-image: url("../images/logo_instagram.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .footer__contacts-circle-youtube {
-  background-image: url("logo_youtube.svg");
+  background-image: url("../images/logo_youtube.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .footer__navigation-tabs {
   align-self: flex-end;
+  display: flex;
 }
 
 .footer__navigation-tabs__link {
-  float: left;
   text-align: center;
   padding: 29px;
   color: white;
-  font-family: Roboto;
   font-size: 16px;
 }
 
@@ -346,7 +329,6 @@ a.footer__navigation-tabs__link:hover {
 
 .footer__designed-by {
   color: grey;
-  font-family: Roboto;
   font-size: 16px;
   align-self: flex-end;
   padding: 10px;
