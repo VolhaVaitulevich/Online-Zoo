@@ -1,0 +1,54 @@
+.header__watch-online-circle {
+  height: 30vmax;
+  width: 30vmax;
+  background-color: #f9804b;
+  border-radius: 50%;
+  position: relative;
+  top: 20px;
+  left: calc(100vmax - 60vw);
+}
+
+.header__watch-online-text {
+  color: white;
+  font-size: 6vmax;
+  font-weight: bold;
+  line-height: 80%;
+  position: relative;
+  text-align: center;
+  margin: 0;
+  padding-top: 20%;
+  padding-left: 20%;
+}
+
+.header__yellow-text {
+  color: #fe2e;
+}
+
+.button__watch-online {
+  position: relative;
+  width: 25vw;
+  top: 10%;
+  left: 30%;
+}
+.page-content {
+  display: flex;
+  min-height: 100vh;
+  height: 100%;
+  padding-left: calc(100vmax - 90%);
+}
+
+.page-content__how-it-works {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+}
+
+.page-content__how-it-works-img {
+  width: 40%;
+}
+
+.page-content__flower1 {
+  width: 15%;
+}
