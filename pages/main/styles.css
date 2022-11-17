@@ -26,7 +26,7 @@
 
 .button__watch-online {
   position: relative;
-  width: 25vw;
+  width: 298px;
   top: 10%;
   left: 30%;
 }
@@ -34,7 +34,7 @@
   display: flex;
   min-height: 100vh;
   height: 100%;
-  padding-left: calc(100vmax - 90%);
+  padding: 0 calc(100vmax - 90%);
 }
 
 .page-content__how-it-works {

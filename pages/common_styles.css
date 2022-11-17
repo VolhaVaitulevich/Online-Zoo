@@ -60,17 +60,17 @@ a.navigation-tabs__link:hover {
   height: 54px;
 }
 
-.button_default-circle {
-  border: 0;
-  border-radius: 25px;
-}
-
-.button_default-circle:hover {
+.button:hover {
   background-color: #e47209;
 }
 
-.button_default-circle:active {
+.button:active {
   background-color: #4b9200;
+}
+
+.button_default-circle {
+  border: 0;
+  border-radius: 25px;
 }
 
 .button_default-rectangle {
@@ -81,15 +81,7 @@ a.navigation-tabs__link:hover {
   text-transform: uppercase;
 }
 
-.button_default-rectangle:hover {
-  background-color: #e47209;
-}
-
-.button_default-rectangle:active {
-  background-color: #4b9200;
-}
-
-.email-input {
+.input {
   border-color: #f9804b;
   background-color: black;
   border-radius: 2px;
@@ -97,7 +89,7 @@ a.navigation-tabs__link:hover {
   color: white;
 }
 
-.email-input:focus {
+.input:focus {
   border-color: #4b9200;
 }
 
