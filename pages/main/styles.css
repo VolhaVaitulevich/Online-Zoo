@@ -32,23 +32,149 @@
 }
 .page-content {
   display: flex;
-  min-height: 100vh;
-  height: 100%;
-  padding: 0 calc(100vmax - 90%);
+  justify-content: space-between;
+  padding: 0 calc(50vw - 580px);
 }
 
 .page-content__how-it-works {
   display: flex;
-  gap: 30px;
   justify-content: space-between;
   align-items: center;
   color: black;
+  gap: 5vw;
+  justify-self: left;
 }
 
-.page-content__how-it-works-img {
-  width: 40%;
+.page-content__how-it-works-text {
+  width: 465px;
 }
 
-.page-content__flower1 {
-  width: 15%;
+.page-content__background-image {
+  background-repeat: no-repeat;
+}
+
+.page-content__background-image_how-it-works {
+  background-image: url("../../assets/fonts/page-content-how-it-works.svg");
+  width: 609px;
+  height: 403px;
+}
+
+.page-content__background-image_flower1 {
+  background-image: url("../../assets/fonts/flower_foto1.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: auto 605px;
+  height: 605px;
+  width: 300px;
+  margin-right: calc(-1 * (50vw - 580px));
+}
+
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.page-content__choose-animal {
+  border: 1px solid #f9804b;
+  border-radius: 5px;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.page-content__choose-animal figcaption {
+  padding: 8px 16px 10px;
+  font-size: 15px;
+  line-height: 120%;
+}
+
+.page-content__choose-animal figcaption strong {
+  font-size: 16px;
+}
+
+.slides {
+  display: flex;
+  scroll-behavior: smooth;
+  overflow: hidden;
+}
+
+.slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  width: 100%;
+  transform: scale(1);
+  padding: 0 calc(50vw - 580px);
+}
+
+.slide__prev,
+.slide__next {
+  position: absolute;
+  width: 62px;
+  height: 62px;
+  background-color: #f9804b;
+  border-radius: 50%;
+}
+
+.slider__arrow-right {
+  right: calc(50vw - 662px);
+  background-image: url("../../assets/icons/arrow_right.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slider__arrow-left {
+  left: calc(50vw - 662px);
+  background-image: url("../../assets/icons/arrow_left.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: rotate();
+}
+
+.page-content__choose-your-fovourite {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.button__choose-favourite {
+  align-self: center;
+  justify-content: center;
+  padding: 0;
+  margin: 94px 0;
+}
+
+@media screen and (min-width: 401px) and (max-width: 1600px) {
+  .page-content__background-image_flower1 {
+    display: none;
+  }
+
+  .page-content {
+    padding: 100px calc(50vw - 580px);
+  }
+  .page-content__choose-animal {
+    margin: 70px 0;
+  }
+  .slide__prev {
+    margin: calc(50vw - 300px);
+  }
+
+  .slide__next {
+    margin: calc(50vw - 300px);
+  }
+}
+
+.page-content__choose-animal-herbivorous {
+  background-image: url("../../assets/icons/bamboo.svg"),
+    url("../../assets/icons/banana.svg");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+.page-content__choose-animal-carnivorous {
+  background-image: url("../../assets/icons/meat.svg"),
+    url("../../assets/icons/fish.svg");
+  background-repeat: no-repeat;
+  background-position: right bottom;
 }
