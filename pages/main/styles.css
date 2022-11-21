@@ -1,0 +1,180 @@
+.header__watch-online-circle {
+  height: 30vmax;
+  width: 30vmax;
+  background-color: #f9804b;
+  border-radius: 50%;
+  position: relative;
+  top: 20px;
+  left: calc(100vmax - 60vw);
+}
+
+.header__watch-online-text {
+  color: white;
+  font-size: 6vmax;
+  font-weight: bold;
+  line-height: 80%;
+  position: relative;
+  text-align: center;
+  margin: 0;
+  padding-top: 20%;
+  padding-left: 20%;
+}
+
+.header__yellow-text {
+  color: #fe2e;
+}
+
+.button__watch-online {
+  position: relative;
+  width: 298px;
+  top: 10%;
+  left: 30%;
+}
+.page-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 calc(50vw - 580px);
+}
+
+.page-content__how-it-works {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+  gap: 5vw;
+  justify-self: left;
+}
+
+.page-content__how-it-works-text {
+  width: 465px;
+}
+
+.page-content__background-image {
+  background-repeat: no-repeat;
+}
+
+.page-content__background-image_how-it-works {
+  background-image: url("../../assets/fonts/page-content-how-it-works.svg");
+  width: 609px;
+  height: 403px;
+}
+
+.page-content__background-image_flower1 {
+  background-image: url("../../assets/fonts/flower_foto1.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: auto 605px;
+  min-height: 605px; /* 
+  width: 300px;
+  margin-right: calc(-1 * (50vw - 580px)); */
+}
+
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.page-content__choose-animal {
+  border: 1px solid #f9804b;
+  border-radius: 5px;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.page-content__choose-animal figcaption {
+  padding: 8px 16px 10px;
+  font-size: 15px;
+  line-height: 120%;
+}
+
+.page-content__choose-animal figcaption strong {
+  font-size: 16px;
+}
+
+.slides {
+  display: flex;
+  scroll-behavior: smooth;
+  overflow: hidden;
+}
+
+.slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  width: 100%;
+  transform: scale(1);
+  padding: 0 calc(50vw - 580px);
+}
+
+.slide__prev,
+.slide__next {
+  position: absolute;
+  width: 62px;
+  height: 62px;
+  background-color: #f9804b;
+  border-radius: 50%;
+}
+
+.slider__arrow-right {
+  right: calc(50vw - 662px);
+  background-image: url("../../assets/icons/arrow_right.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slider__arrow-left {
+  left: calc(50vw - 662px);
+  background-image: url("../../assets/icons/arrow_left.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: rotate();
+}
+
+.page-content__choose-your-favourite {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.button__choose-favourite {
+  align-self: center;
+  justify-content: center;
+  padding: 0;
+  margin: 94px 0;
+}
+
+@media screen and (min-width: 401px) and (max-width: 1600px) {
+  .page-content__background-image_flower1 {
+    display: none;
+  }
+
+  .page-content {
+    padding: 100px calc(50vw - 580px);
+  }
+  .page-content__choose-animal {
+    margin: 70px 0;
+  }
+  .slide__prev {
+    margin: calc(50vw - 300px);
+  }
+
+  .slide__next {
+    margin: calc(50vw - 300px);
+  }
+}
+
+.page-content__choose-animal-herbivorous {
+  background-image: url("../../assets/icons/banana.svg"),
+    url("../../assets/icons/bamboo.svg");
+  background-repeat: no-repeat;
+  background-position: 97% 97%;
+}
+
+.page-content__choose-animal-carnivorous {
+  background-image: url("../../assets/icons/fish.svg"),
+    url("../../assets/icons/meat.svg");
+  background-repeat: no-repeat;
+  background-position: 97% 97%;
+}

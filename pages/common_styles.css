@@ -1,0 +1,243 @@
+* {
+  box-sizing: border-box;
+  font-family: Roboto;
+}
+
+.navigation-bar {
+  background-color: black;
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 calc(50vw - 580px);
+}
+
+.logo {
+  width: 82px;
+  position: relative;
+}
+
+.logo a {
+  text-decoration: none;
+}
+
+.logo__text {
+  border: 1px solid #fff;
+  border-radius: 3px;
+  color: white;
+  text-align: center;
+  font-size: 19px;
+  line-height: 120%;
+  background-image: url("../assets/icons/logo_image.svg");
+  background-repeat: no-repeat;
+  background-position: bottom 20% left 8%;
+}
+
+.navigation-tabs__link {
+  text-align: center;
+  padding: 29px;
+  color: white;
+  font-size: 16px;
+}
+
+a.navigation-tabs__link {
+  text-decoration: none;
+  color: white;
+}
+
+a.navigation-tabs__link:hover {
+  color: #f9804b;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.button {
+  cursor: pointer;
+  font-size: 16px;
+  color: white;
+  background-color: #f9804b;
+  width: 298px;
+  height: 54px;
+}
+
+.button:hover {
+  background-color: #e47209;
+}
+
+.button:active {
+  background-color: #4b9200;
+}
+
+.button_circle {
+  border: 0;
+  border-radius: 25px;
+}
+
+.button_rectangle {
+  border: 0;
+  border-radius: 5px;
+  height: 40px;
+  text-transform: uppercase;
+}
+
+.input {
+  border: 1px solid #f9804b;
+  background-color: black;
+  border-radius: 2px;
+  color: white;
+  outline: none;
+}
+
+.input:focus {
+  border-color: #4b9200;
+}
+
+h1 {
+  font-weight: 100;
+  font-size: 36px;
+  margin-top: 0;
+}
+
+h2 {
+  font-weight: 100;
+  font-size: 24px;
+}
+
+h3 {
+  font-weight: 100;
+  font-size: 16px;
+}
+
+.header__designed-by a {
+  text-align: center;
+  padding: 29px;
+  color: white;
+  font-size: 16px;
+}
+
+.header__designed-by a {
+  text-decoration: none;
+  color: white;
+}
+
+.header__designed-by a:hover {
+  color: #f9804b;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.header__content-background {
+  height: calc(100vh - 80px);
+  background-image: url("../assets/fonts/header__image.png");
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: cover;
+}
+
+footer {
+  bottom: 0;
+  width: 100%;
+  height: 440px;
+  background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 calc(50vw - 580px);
+}
+
+.footer__top {
+  background-color: black;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  align-items: center;
+}
+
+.footer__subscription p {
+  color: white;
+  margin-bottom: 5px;
+  font-size: 24px;
+}
+
+.footer__subscription-email {
+  height: 42px;
+  width: 228px;
+}
+
+.footer__subscription-button {
+  width: 129px;
+  height: 42px;
+  background-color: #f1f3f2;
+  border-color: black;
+  border-radius: 2px;
+  border-width: 1px;
+  color: black;
+}
+
+.footer__subscription-button:active {
+  border-color: #4b9200;
+  background-color: #f1f3f2;
+  color: #4b9200;
+}
+
+.footer__bottom {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer__contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 120px;
+}
+
+.footer__contacts-link {
+  height: 30px;
+  width: 30px;
+  background-color: grey;
+  border-radius: 50%;
+  color: white;
+  text-decoration: none;
+  line-height: 200%;
+  text-indent: 40px;
+}
+
+.footer__contacts-circle-facebook {
+  background-image: url("../assets/icons/logo_facebook.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.footer__contacts-circle-twitter {
+  background-image: url("../assets/icons/logo_twitter.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.footer__contacts-circle-instagram {
+  background-image: url("../assets/icons/logo_instagram.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.footer__contacts-circle-youtube {
+  background-image: url("../assets/icons/logo_youtube.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.footer__navigation-tabs {
+  align-self: flex-end;
+  display: flex;
+}
+
+.footer__designed-by {
+  color: grey;
+  font-size: 16px;
+  align-self: flex-end;
+  padding-bottom: 10px;
+}
