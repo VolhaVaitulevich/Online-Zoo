@@ -132,7 +132,7 @@
   transform: rotate();
 }
 
-.page-content__choose-your-fovourite {
+.page-content__choose-your-favourite {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -166,15 +166,15 @@
 }
 
 .page-content__choose-animal-herbivorous {
-  background-image: url("../../assets/icons/bamboo.svg"),
-    url("../../assets/icons/banana.svg");
+  background-image: url("../../assets/icons/banana.svg"),
+    url("../../assets/icons/bamboo.svg");
   background-repeat: no-repeat;
-  background-position: right bottom;
+  background-position: 97% 97%;
 }
 
 .page-content__choose-animal-carnivorous {
-  background-image: url("../../assets/icons/meat.svg"),
-    url("../../assets/icons/fish.svg");
+  background-image: url("../../assets/icons/fish.svg"),
+    url("../../assets/icons/meat.svg");
   background-repeat: no-repeat;
-  background-position: right bottom;
+  background-position: 97% 97%;
 }
