@@ -76,7 +76,6 @@ a.navigation-tabs__link:hover {
 .button_rectangle {
   border: 0;
   border-radius: 5px;
-  padding: 0 calc(width - 90%); /* //исправить */
   height: 40px;
   text-transform: uppercase;
 }
@@ -169,14 +168,16 @@ footer {
   width: 129px;
   height: 42px;
   background-color: #f1f3f2;
-  border-color: #4b9200;
+  border-color: black;
   border-radius: 2px;
   border-width: 1px;
-  color: #4b9200;
+  color: black;
 }
 
-.footer__subscription-button:hover {
+.footer__subscription-button:active {
+  border-color: #4b9200;
   background-color: #f1f3f2;
+  color: #4b9200;
 }
 
 .footer__bottom {

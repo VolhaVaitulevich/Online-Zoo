@@ -64,9 +64,9 @@
   background-repeat: no-repeat;
   background-position: right;
   background-size: auto 605px;
-  height: 605px;
+  min-height: 605px; /* 
   width: 300px;
-  margin-right: calc(-1 * (50vw - 580px));
+  margin-right: calc(-1 * (50vw - 580px)); */
 }
 
 .image-gallery {
