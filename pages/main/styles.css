@@ -104,8 +104,13 @@
   background-position: 97% 97%;
 }
 
+.slider {
+  overflow: hidden;
+}
+
 .slides {
   display: flex;
+  flex-direction: row;
 }
 
 .slide {
@@ -124,7 +129,7 @@
   height: 62px;
   background-color: #f9804b;
   border-radius: 50%;
-  align-self: center;
+  top: 37%;
 }
 
 .slider__arrow-right {
@@ -158,6 +163,7 @@
   display: inline-block;
   background-image: url("../../assets/fonts/strelitzia.svg");
   background-repeat: no-repeat;
+  z-index: -1;
 }
 
 .page-content__choose-your-favourite::before {
@@ -170,6 +176,7 @@
   display: inline-block;
   background-image: url("../../assets/fonts/palm_foto.svg");
   background-repeat: no-repeat;
+  z-index: -1;
 }
 
 .button__choose-favourite {
@@ -189,10 +196,9 @@
   .page-content__choose-animal {
     margin: 70px 0;
   }
-  .slide__prev {
-    margin: calc(50vw - 300px);
-  }
+  .slide__prev,
   .slide__next {
+    top: 3%;
     margin: calc(50vw - 300px);
   }
 }
