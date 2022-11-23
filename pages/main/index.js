@@ -28,11 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
       parseInt(slides.dataset.transition) === null
         ? 400
         : parseInt(slides.dataset.transition);
-
-    slidesList.style.transition = `${transition}ms`;
-
-    let slidesWidth = slides.offsetWidth;
-
+    let slidesWidth = slides.clientWidth;
     let index = 0;
 
     const nextSlide = () => {
@@ -52,16 +48,23 @@ document.addEventListener("DOMContentLoaded", function () {
     };
 
     const showSlide = () => {
+      slidesList.style.transition = `${transition}ms`;
       slidesList.style.transform = `translate3d(${
-        index * -slides.offsetWidth
+        index * -slidesWidth
       }px, 0, 0)`;
     };
+
+    const showSlideResize = () => {
+      slidesWidth = slides.clientWidth;
+      slidesList.style.transition = `0ms`;
+      slidesList.style.transform = `translate3d(${
+        index * -slidesWidth
+      }px, 0, 0)`;
+    };
+
+    window.addEventListener("resize", showSlideResize);
   }
 
   const slideShows = document.querySelectorAll(SLIDER);
   slideShows.forEach((elem) => makeSlideshow(elem));
 });
-
-window.onresize = function () {
-  location.reload();
-};
