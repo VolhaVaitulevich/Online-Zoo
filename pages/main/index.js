@@ -1,4 +1,4 @@
-window.onload = function () {
+document.addEventListener("DOMContentLoaded", function () {
   const SLIDER = ".slider";
   const SLIDES = ".slides";
   const NEXT_BUTTON = ".slide__next";
@@ -9,8 +9,6 @@ window.onload = function () {
     const imageGallery = slidesList.querySelectorAll(".slide");
     const nextButton = slides.querySelector(NEXT_BUTTON);
     const prevButton = slides.querySelector(PREV_BUTTON);
-
-    console.log(slides);
 
     if (nextButton !== null) {
       nextButton.addEventListener("click", function (e) {
@@ -26,11 +24,10 @@ window.onload = function () {
       });
     }
 
-    let transition = parseInt(slides.dataset.transition);
-
-    if (slides.dataset.transition === null) {
-      transition = 400;
-    }
+    let transition =
+      parseInt(slides.dataset.transition) === null
+        ? 400
+        : parseInt(slides.dataset.transition);
 
     slidesList.style.transition = `${transition}ms`;
 
@@ -57,13 +54,9 @@ window.onload = function () {
       slidesList.style.transform = `translate3d(${
         index * -slidesWidth
       }px, 0, 0)`;
-      console.log(index * -slidesWidth);
     };
   }
 
   const slideShows = document.querySelectorAll(SLIDER);
-
-  for (let i = 0; i < slideShows.length; i += 1) {
-    makeSlideshow(slideShows[i]);
-  }
-};
+  slideShows.forEach((elem) => makeSlideshow(elem));
+});
