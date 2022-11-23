@@ -31,7 +31,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     slidesList.style.transition = `${transition}ms`;
 
-    const slidesWidth = slides.clientWidth;
+    let slidesWidth = slides.offsetWidth;
+
     let index = 0;
 
     const nextSlide = () => {
@@ -52,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const showSlide = () => {
       slidesList.style.transform = `translate3d(${
-        index * -slidesWidth
+        index * -slides.offsetWidth
       }px, 0, 0)`;
     };
   }
@@ -60,3 +61,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const slideShows = document.querySelectorAll(SLIDER);
   slideShows.forEach((elem) => makeSlideshow(elem));
 });
+
+window.onresize = function () {
+  location.reload();
+};
