@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../normalize.css" />
     <link rel="stylesheet" href="../common_styles.css" />
     <link rel="stylesheet" href="styles.css" />
+    <script src="index.js"></script>
     <title>Online-Zoo</title>
   </head>
   <body>
@@ -66,7 +67,8 @@
       </div>
     </section>
     <section class="page-content__choose-your-favourite">
-      <div class="slider">
+      <div id="slider" class="slider" data-transition="400">
+        <!-- slides -->
         <div class="slides">
           <div id="slides__1" class="slide">
             <div class="image-gallery">
@@ -129,16 +131,6 @@
                 </figcaption>
               </figure>
             </div>
-            <a
-              class="slide__prev slider__arrow-left"
-              href="#slides__3"
-              title="Next"
-            ></a>
-            <a
-              class="slide__next slider__arrow-right"
-              href="#slides__2"
-              title="Next"
-            ></a>
           </div>
           <div id="slides__2" class="slide">
             <div class="image-gallery">
@@ -202,16 +194,6 @@
                 </figcaption>
               </figure>
             </div>
-            <a
-              class="slide__prev slider__arrow-left"
-              href="#slides__1"
-              title="Prev"
-            ></a>
-            <a
-              class="slide__prev slider__arrow-right"
-              href="#slides__3"
-              title="Next"
-            ></a>
           </div>
           <div id="slides__3" class="slide">
             <div class="image-gallery">
@@ -275,19 +257,12 @@
                 </figcaption>
               </figure>
             </div>
-            <a
-              class="slide__prev slider__arrow-left"
-              href="#slides__2"
-              title="Prev"
-            ></a>
-            <a
-              class="slide__prev slider__arrow-right"
-              href="#slides__1"
-              title="Next"
-            ></a>
           </div>
         </div>
+        <a href="#" class="slide__prev slider__arrow-left" title="Prev"></a>
+        <a href="#" class="slide__next slider__arrow-right" title="Next"></a>
       </div>
+
       <button class="button button_circle button__choose-favourite">
         CHOOSE YOUR FAVOURITE
       </button>
