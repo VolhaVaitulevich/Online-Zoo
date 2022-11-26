@@ -78,6 +78,7 @@
   border-radius: 5px;
   padding: 0;
   margin: 20px 0;
+  background: white;
 }
 
 .page-content__choose-animal figcaption {
@@ -126,7 +127,7 @@
 .slide__prev,
 .slide__next {
   position: absolute;
-  top: 47%;
+  top: calc(50% - 31px);
   width: 62px;
   height: 62px;
   background-color: #f9804b;
@@ -161,7 +162,7 @@
   right: 0;
   width: 368px;
   height: 275px;
-  display: inline-block;
+  display: block;
   background-image: url("../../assets/fonts/strelitzia.svg");
   background-repeat: no-repeat;
   z-index: -1;
@@ -174,7 +175,7 @@
   left: 0;
   width: 440px;
   height: 460px;
-  display: inline-block;
+  display: block;
   background-image: url("../../assets/fonts/palm_foto.svg");
   background-repeat: no-repeat;
   z-index: -1;
@@ -197,9 +198,10 @@
   .page-content__choose-animal {
     margin: 70px 0;
   }
-  .slide__prev,
+  .slide__prev {
+    left: calc(386px + (50vw - 580px));
+  }
   .slide__next {
-    margin-left: calc(50vw - 300px);
-    margin-right: calc(50vw - 300px);
+    right: calc(386px + (50vw - 580px));
   }
 }
