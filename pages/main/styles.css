@@ -216,7 +216,6 @@
 .pick-animal {
   background-color: rgba(253, 253, 255, 0.52);
   border-radius: 20px;
-  width: 1160px;
   height: 835px;
   margin: 80px calc(50vw - 580px);
   padding: 50px 100px;
@@ -238,6 +237,11 @@
 
 .pick-animal__description h1 {
   color: #fe9013;
+}
+
+.pick-animal__description a {
+  text-decoration-color: #fe9013;
+  color: black;
 }
 
 .pick-animal__steps {
@@ -263,7 +267,7 @@
 }
 
 .pick-animal_button {
-  background-color: #ffee2e;
+  background-color: #fe9013;
   align-self: center;
   justify-content: center;
   padding: 0;
@@ -273,4 +277,88 @@
 .pick-animal__how-it-works {
   display: flex;
   flex-direction: column;
+}
+
+.page-content__testimonials {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 80px calc(50vw - 580px);
+}
+
+.page-content__testimonials h1 {
+  text-align: center;
+}
+
+.testimonials__progress-bar {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+input[type="range"] {
+  width: 599px;
+  align-self: center;
+  display: block;
+  -webkit-appearance: none;
+  background-color: white;
+  height: 5px;
+  border: 1px solid transparent;
+  background: linear-gradient(white, white) padding-box,
+    linear-gradient(to bottom right, #e0d8f0, #f3a9f8, #febdab) border-box;
+  border-radius: 5px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background-color: #fe9013;
+  width: 115px;
+  height: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+​ input[type="range"]::-webkit-slider-thumb:hover {
+  background-color: white;
+  border: 2px solid #e74c3c;
+}
+input[type="range"]::-webkit-slider-thumb:active {
+  transform: scale(1.6);
+}
+
+.testimonials {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 22px;
+}
+
+.testimonial {
+  flex-basis: 1 0 21%;
+  flex-shrink: 0;
+  width: 268px;
+  height: 391px;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  background: linear-gradient(white, white) padding-box,
+    linear-gradient(to bottom right, #e0d8f0, #f3a9f8, #febdab) border-box;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px 15px;
+}
+
+.testimonial figure {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.testimonial figure img {
+  padding-right: 20px;
+}
+
+.testimonial p {
+  font-size: 15px;
 }
