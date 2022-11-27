@@ -1,0 +1,113 @@
+.header__content-background_donate {
+  height: 390px;
+}
+
+.page-content__pick-animal {
+  background-image: linear-gradient(to bottom right, #febdab, #fed290);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: white;
+  padding: 40px calc(50vw - 580px);
+}
+
+.pick-animal {
+  background-color: rgba(253, 253, 255, 0.52);
+  border-radius: 20px;
+  height: 835px;
+  margin-bottom: 180px;
+  padding: 50px 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: black;
+}
+
+.pick-animal__donation-information {
+  color: #fe9013;
+}
+
+.pick-animal h1 {
+  color: #fe9013;
+}
+
+.pick-animal__description {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pick-animal__input-amount {
+  background-color: white;
+  border-color: #929699;
+  width: 268px;
+  height: 54px;
+  margin: 25px 0;
+}
+
+.pick-animal__radio-buttons {
+  display: flex;
+  gap: 50px;
+  margin-bottom: 30px;
+}
+
+.pick-animal__slider {
+  background-color: #404950;
+  width: 976px;
+  height: 27px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+}
+
+input[type="range"] {
+  width: 915px;
+  align-self: center;
+  -webkit-appearance: none;
+  background-color: #febdab;
+  height: 1px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background-color: #fe9013;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  margin-top: -20px;
+}
+
+datalist {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  writing-mode: horizontal-tb;
+  width: 950px;
+}
+
+option {
+  padding: 0;
+}
+
+.pick-amnimal__animals-widget {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 90px;
+  align-items: center;
+  color: black;
+  margin-bottom: 50px;
+}
+
+.animals-widget__image {
+  background-image: url("../../assets/images/animals-widget-panda.svg");
+  background-repeat: no-repeat;
+  width: 284px;
+  height: 246px;
+}
