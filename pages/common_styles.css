@@ -41,6 +41,10 @@
   font-size: 16px;
 }
 
+.navigation-tabs__link.active {
+  color: #e47209;
+}
+
 a.navigation-tabs__link {
   text-decoration: none;
   color: white;
@@ -76,7 +80,7 @@ a.navigation-tabs__link:hover {
 .button_rectangle {
   border: 0;
   border-radius: 5px;
-  height: 40px;
+  height: 54px;
   text-transform: uppercase;
 }
 

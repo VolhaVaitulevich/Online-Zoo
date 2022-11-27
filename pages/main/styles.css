@@ -284,10 +284,26 @@
   flex-direction: column;
   justify-content: center;
   padding: 80px calc(50vw - 580px);
+  padding-bottom: 180px;
+
+  position: relative;
 }
 
 .page-content__testimonials h1 {
   text-align: center;
+}
+
+.page-content__testimonials::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 240px;
+  height: 300px;
+  display: block;
+  background-image: url("../../assets/fonts/leav_foto.svg");
+  background-repeat: no-repeat;
+  z-index: -1;
 }
 
 .testimonials__progress-bar {
@@ -330,12 +346,11 @@ input[type="range"]::-webkit-slider-thumb:active {
 .testimonials {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  gap: 22px;
+  justify-content: center;
+  gap: 15px;
 }
 
 .testimonial {
-  flex-basis: 1 0 21%;
   flex-shrink: 0;
   width: 268px;
   height: 391px;

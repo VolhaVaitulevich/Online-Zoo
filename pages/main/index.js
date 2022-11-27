@@ -67,4 +67,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const slideShows = document.querySelectorAll(SLIDER);
   slideShows.forEach((elem) => makeSlideshow(elem));
+
+  const activePage = window.location.pathname;
+  document.querySelectorAll("nav a").forEach((link) => {
+    if (link.href.includes(`${activePage}`)) {
+      link.classList.add("active");
+    }
+  });
 });
