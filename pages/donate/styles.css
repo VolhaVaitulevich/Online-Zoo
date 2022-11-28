@@ -97,7 +97,7 @@ datalist {
   flex-direction: row;
   justify-content: center;
   gap: 90px;
-  align-items: center;
+  align-items: flex-end;
   color: black;
   margin-bottom: 50px;
 }
@@ -107,4 +107,16 @@ datalist {
   background-repeat: no-repeat;
   width: 284px;
   height: 246px;
+}
+
+.animal-widget__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.animal-widget__info-line1 {
+  font-size: 72px;
+  margin: 0;
+  font-weight: bold;
 }
