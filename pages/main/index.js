@@ -68,10 +68,38 @@ document.addEventListener("DOMContentLoaded", function () {
   const slideShows = document.querySelectorAll(SLIDER);
   slideShows.forEach((elem) => makeSlideshow(elem));
 
+  //highlight active tab in the navigation menu
   const activePage = window.location.pathname;
   document.querySelectorAll("nav a").forEach((link) => {
     if (link.href.includes(`${activePage}`)) {
       link.classList.add("active");
     }
   });
+
+  //function to update value in Amount field
+  const rangeValue = () => {
+    sliderValue = document.getElementById("pick-animal__randeSlider").value;
+    document.getElementById("input-amount").value = document.querySelector(
+      'option[data-value="' + sliderValue + '"]'
+    ).value;
+  };
+
+  const rangeValueFromInput = () => {
+    const options = [...rangeOptions].map((elem) => elem.value);
+    if (options.includes(amountField.value)) {
+      inputRange.value = document
+        .querySelector('option[value="' + amountField.value + '"]')
+        .getAttribute("data-value");
+    }
+  };
+  let inputRange = document.querySelector('input[type="range"]');
+  let amountField = document.getElementById("input-amount");
+  let rangeOptions = document.querySelectorAll("datalist option");
+  //set start  value for Amount field
+  let sliderValue = document.getElementById("pick-animal__randeSlider").value;
+  document.getElementById("input-amount").value = document.querySelector(
+    'option[data-value="' + sliderValue + '"]'
+  ).value;
+  inputRange.addEventListener("input", rangeValue);
+  amountField.addEventListener("input", rangeValueFromInput);
 });

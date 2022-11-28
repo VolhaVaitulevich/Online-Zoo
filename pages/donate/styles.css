@@ -43,6 +43,7 @@
 .pick-animal__input-amount {
   background-color: white;
   border-color: #929699;
+  color: black;
   width: 268px;
   height: 54px;
   margin: 25px 0;
@@ -89,10 +90,6 @@ datalist {
   justify-content: space-between;
   writing-mode: horizontal-tb;
   width: 950px;
-}
-
-option {
-  padding: 0;
 }
 
 .pick-amnimal__animals-widget {

@@ -66,28 +66,29 @@
           </div>
           <label for="pick-animal__randeSlider">Amount</label>
           <div class="pick-animal__slider">
-            <input id="pick-animal__randeSlider" type="range" min="1" max="8" step="1" value="2" list="amounts"></input>
-          </div>  
+            <input id="pick-animal__randeSlider" type="range" min="1" max="8" step="1" value="6" list="amounts"> </input>
+          </div>
             <datalist id="amounts">
-              <option value="$5000" label="$5000"></option>
-              <option value="$2000" label="$2000"></option>
-              <option value="$1000" label="$1000"></option>
-              <option value="$500" label="$500"></option>
-              <option value="$250" label="$250"></option>
-              <option value="$100" label="$100"></option>
-              <option value="$50" label="$50"></option>
-              <option value="$25" label="$25"></option>
+              <option data-value="1" value="5000" label="$5000"></option>
+              <option data-value="2" value="2000" label="$2000"></option>
+              <option data-value="3" value="1000" label="$1000"></option>
+              <option data-value="4" value="500" label="$500"></option>
+              <option data-value="5" value="250" label="$250"></option>
+              <option data-value="6" value="100" label="$100"></option>
+              <option data-value="7" value="50" label="$50"></option>
+              <option data-value="8" value="25" label="$25"></option>
             </datalist>
           <input
+            id="input-amount"
             class="input pick-animal__input-amount"
-            type="number"
-            placeholder="Anoher amount"
+            type="number" onfocus="this.placeholder = ''"
+            placeholder="Anoher amount" maxlength="4"
           />
           <div class="pick-animal__radio-buttons">
             <div><input type="radio" id="monthly" name="subscription-type">
             <label for="monthly">Monthly</label></div>
             <div>
-            <input type="radio" id="once" name="subscription-type">
+            <input type="radio" id="once" name="subscription-type"  checked="checked">
             <label for="once">Once</label></div>
           </div>
           <button class="button button_circle pick-animal_button" type="button">FEED A FRIEND NOW</button>
