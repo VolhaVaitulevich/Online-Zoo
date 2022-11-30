@@ -190,7 +190,7 @@
 
 @media screen and (min-width: 401px) and (max-width: 1600px) {
   .page-content__background-image_flower1 {
-    display: none;
+    background-size: 0 0;
   }
   .page-content {
     padding: 100px calc(50vw - 580px);

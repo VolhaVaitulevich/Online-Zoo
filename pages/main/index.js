@@ -4,6 +4,49 @@ document.addEventListener("DOMContentLoaded", function () {
   const NEXT_BUTTON = ".slide__next";
   const PREV_BUTTON = ".slide__prev";
 
+  const CONFIG = {
+    1: {
+      image: "url(../../assets/images/animals-widget-eagle.svg)",
+      line1: "7",
+      line2: "Something about eagles.",
+    },
+    2: {
+      image: "url(../../assets/images/animals-widget-panda.svg)",
+      line1: "4",
+      line2: "Panda diet for the day.",
+    },
+    3: {
+      image: "url(../../assets/images/animals-widget-gorilla.svg)",
+      line1: "18",
+      line2: "Something about gorillas.",
+    },
+    4: {
+      image: "url(../../assets/images/animals-widget-panda.svg)",
+      line1: "1",
+      line2: "Something about pandas.",
+    },
+    5: {
+      image: "url(../../assets/images/animals-widget-alligator.svg)",
+      line1: "3",
+      line2: "Something about alligators.",
+    },
+    6: {
+      image: "url(../../assets/images/animals-widget-eagle.svg)",
+      line1: "12",
+      line2: "More info about eagles.",
+    },
+    7: {
+      image: "url(../../assets/images/animals-widget-alligator.svg)",
+      line1: "2",
+      line2: "More info about alligators.",
+    },
+    8: {
+      image: "url(../../assets/images/animals-widget-gorilla.svg)",
+      line1: "1",
+      line2: "More info about gorillas.",
+    },
+  };
+
   function makeSlideshow(slides) {
     const slidesList = slides.querySelector(SLIDES);
     const imageGallery = slidesList.querySelectorAll(".slide");
@@ -97,61 +140,10 @@ document.addEventListener("DOMContentLoaded", function () {
   };
 
   const changeWidgetInfo = () => {
-    switch (sliderValue) {
-      case "1":
-        widgetImage.style.backgroundImage =
-          "url(../../assets/images/animals-widget-eagle.svg)";
-        widgetTextLine1.innerHTML = "7";
-        widgetTextLine2.innerHTML = "Something about eagles.";
-        break;
-      case "2":
-        widgetImage.style.backgroundImage =
-          "url(../../assets/images/animals-widget-panda.svg)";
-        widgetTextLine1.innerHTML = "4";
-        widgetTextLine2.innerHTML = "Panda diet for the day.";
-        break;
-      case "3":
-        widgetImage.style.backgroundImage =
-          "url(../../assets/images/animals-widget-gorilla.svg)";
-        widgetTextLine1.innerHTML = "18";
-        widgetTextLine2.innerHTML = "Something about gorillas.";
-        break;
-      case "4":
-        widgetImage.style.backgroundImage =
-          "url(../../assets/images/animals-widget-panda.svg)";
-        widgetTextLine1.innerHTML = "1";
-        widgetTextLine2.innerHTML = "Something about pandas.";
-        break;
-      case "5":
-        widgetImage.style.backgroundImage =
-          "url(../../assets/images/animals-widget-alligator.svg)";
-        widgetTextLine1.innerHTML = "3";
-        widgetTextLine2.innerHTML = "Something about alligators.";
-        break;
-      case "6":
-        widgetImage.style.backgroundImage =
-          "url(../../assets/images/animals-widget-eagle.svg)";
-        widgetTextLine1.innerHTML = "12";
-        widgetTextLine2.innerHTML = "More info about eagles.";
-        break;
-      case "7":
-        widgetImage.style.backgroundImage =
-          "url(../../assets/images/animals-widget-alligator.svg)";
-        widgetTextLine1.innerHTML = "2";
-        widgetTextLine2.innerHTML = "More info about alligators.";
-        break;
-      case "8":
-        widgetImage.style.backgroundImage =
-          "url(../../assets/images/animals-widget-gorilla.svg)";
-        widgetTextLine1.innerHTML = "1";
-        widgetTextLine2.innerHTML = "More info about gorillas.";
-        break;
-      default:
-        widgetImage.style.backgroundImage =
-          "url(../../assets/images/animals-widget-panda.svg)";
-        widgetTextLine1.innerHTML = "4";
-        widgetTextLine2.innerHTML = "More info about pandas.";
-    }
+    const currentValue = CONFIG[sliderValue];
+    widgetImage.style.backgroundImage = currentValue.image;
+    widgetTextLine1.innerHTML = currentValue.line1;
+    widgetTextLine2.innerHTML = currentValue.line2;
   };
 
   const inputRange = document.querySelector('input[type="range"]');
