@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const SLIDES = ".slides";
   const NEXT_BUTTON = ".slide__next";
   const PREV_BUTTON = ".slide__prev";
+  const GAP = 30;
 
   function makeSlideshow(slides) {
     const slidesList = slides.querySelector(SLIDES);
@@ -67,4 +68,33 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const slideShows = document.querySelectorAll(SLIDER);
   slideShows.forEach((elem) => makeSlideshow(elem));
+
+  //highlight active tab in the navigation menu
+  const activePage = window.location.pathname;
+  document.querySelectorAll("nav a").forEach((link) => {
+    if (link.href.includes(`${activePage}`)) {
+      link.classList.add("active");
+    }
+  });
+
+  function makeSlideshowTestimonial() {
+    const slidesListTestimonial = document.querySelector(".testimonials");
+    const imageGalleryTestimonial =
+      slidesListTestimonial.querySelectorAll(".testimonial");
+
+    const transitionTestimonial = 400;
+    let slidesWidthTestimonial = imageGalleryTestimonial[0].offsetWidth;
+    let indexTestimonial = document.getElementById("rangeSlider").value;
+
+    const showSlideTestimonial = () => {
+      slidesListTestimonial.style.transition = `${transitionTestimonial}ms`;
+      slidesListTestimonial.style.transform = `translate3d(${
+        indexTestimonial * -(slidesWidthTestimonial + GAP)
+      }px, 0, 0)`;
+    };
+    showSlideTestimonial();
+  }
+
+  const rangeSliderTestimonial = document.getElementById("rangeSlider");
+  rangeSliderTestimonial.addEventListener("input", makeSlideshowTestimonial);
 });

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../normalize.css" />
+    <link rel="stylesheet" href="../common_styles.css" />
+    <link rel="stylesheet" href="../donate/styles.css" />
+    <script src="index.js"></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.7.1.min.js"
+    ></script>
+    <title>Online-Zoo</title>
+  </head>
+  <body>
+    <header>
+      <div class="navigation-bar">
+        <div class="logo">
+          <a href="../main/index.html">
+            <div class="logo__text">PetStory online</div></a
+          >
+        </div>
+        <nav>
+          <a class="navigation-tabs__link" href="../main/index.html">About</a>
+          <a class="navigation-tabs__link" href="../map/map.html">Map</a>
+          <a class="navigation-tabs__link" href="../zoos/zoos.html">Zoos</a>
+          <a class="navigation-tabs__link" href="../donate/donate.html"
+            >Donate</a
+          >
+          <a class="navigation-tabs__link" href="../contacts/contacts.html"
+            >Contact Us</a
+          >
+        </nav>
+        <div class="header__designed-by">
+          <a href="../main/index.html">Designed by ©</a>
+        </div>
+      </div>
+      <div
+        class="header__content-background header__content-background_donate"
+      ></div>
+    </header>
+    <section class="page-content__pick-animal">   
+      <div class="pick-animal__title">
+        <h1>THE ZOO HAS OFFICIALLY REOPENED BUT WE STILL NEED YOUR HELP!</h1>
+        <h3>
+          Even though the Zoo has been able to reopen, we are at a greatly reduced capacity with educational programs and public and private events cancelled or postponed for additional months. We need you now more than ever to help ensure that we overcome these challenges. We have been actively raising funds in the community, and we are grateful for the generosity.  But much more support is still needed, and we need your help! Please consider a gift today - no matter what size - to help us sustain our mission.</a>
+        </h3>
+        <h1 class="pick-animal__donation-information">Donation Information</h1> 
+      </div>
+      <div class="pick-animal">
+        <div class="pick-animal__description">
+          <h1>Pick and feed a friend</h1>
+          <h2>
+            We know the animals bring you joy, and in these extraordinary times,
+            we’re glad.
+          </h2>
+          <div class="pick-amnimal__animals-widget">
+            <div class="animal-widget__info">
+              <p class="animal-widget__info-line1">4</p>
+              <p class="animal-widget__info-line2">Panda diet for the day.</p>
+            </div>
+            <div class="animals-widget__image"></div>
+          </div>
+          <label for="pick-animal__randeSlider">Amount</label>
+          <div class="pick-animal__slider">
+            <input id="pick-animal__randeSlider" type="range" min="1" max="8" step="1" value="6" list="amounts"> </input>
+          </div>
+            <datalist id="amounts">
+              <option data-value="1" value="5000" label="$5000"></option>
+              <option data-value="2" value="2000" label="$2000"></option>
+              <option data-value="3" value="1000" label="$1000"></option>
+              <option data-value="4" value="500" label="$500"></option>
+              <option data-value="5" value="250" label="$250"></option>
+              <option data-value="6" value="100" label="$100"></option>
+              <option data-value="7" value="50" label="$50"></option>
+              <option data-value="8" value="25" label="$25"></option>
+            </datalist>
+          <input
+            id="input-amount"
+            class="input pick-animal__input-amount"
+            type="number" onfocus="this.placeholder = ''"
+            placeholder="Anoher amount" maxlength="4"
+          />
+          <div class="pick-animal__radio-buttons">
+            <div><input type="radio" id="monthly" name="subscription-type">
+            <label for="monthly">Monthly</label></div>
+            <div>
+            <input type="radio" id="once" name="subscription-type"  checked="checked">
+            <label for="once">Once</label></div>
+          </div>
+          <button class="button button_circle pick-animal_button" type="button">FEED A FRIEND NOW</button>
+          <h3>Share with your friends on social networks</h3>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer__top">
+        <div class="logo footer__logo">
+          <a href="../main/index.html">
+            <div class="logo__text footer__logo-text">PetStory online</div></a
+          >
+        </div>
+        <div class="footer__subscription">
+          <p>Subscribe to our news</p>
+          <input
+            class="input footer__subscription-email"
+            type="email"
+            placeholder="Enter your email"
+          />
+          <button
+            class="button button_rectangle footer__subscription-button"
+            type="button"
+          >
+            Submit
+          </button>
+        </div>
+      </div>
+      <button class="button button_rectangle" type="button">
+        donate for volunteers
+      </button>
+      <div class="footer__bottom">
+        <div class="footer__contacts">
+          <a
+            class="footer__contacts-circle-facebook footer__contacts-link"
+            href="#facebook"
+          >
+            Facebook
+          </a>
+          <a
+            class="footer__contacts-circle-twitter footer__contacts-link"
+            href="#twitter"
+          >
+            Twitter
+          </a>
+          <a
+            class="footer__contacts-circle-instagram footer__contacts-link"
+            href="#instagram"
+          >
+            Instagram
+          </a>
+          <a
+            class="footer__contacts-circle-youtube footer__contacts-link"
+            href="#youtube"
+          >
+            YouTube
+          </a>
+        </div>
+        <nav class="footer__navigation-tabs">
+          <a
+            class="navigation-tabs__link navigation-tabs__link_footer"
+            href="../main/index.html"
+            >About</a
+          >
+          <a
+            class="navigation-tabs__link navigation-tabs__link_footer"
+            href="/pages"
+            >Map</a
+          >
+          <a
+            class="navigation-tabs__link navigation-tabs__link_footer"
+            href="/pages"
+            >Zoos</a
+          >
+          <a
+            class="navigation-tabs__link navigation-tabs__link_footer"
+            href="/pages"
+            >Contact Us</a
+          >
+        </nav>
+        <div class="footer__designed-by">
+          <p>
+            Designed by Alisa Samborskaya<br />
+            ©RSSchool & ©Yem Digital 2021
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
